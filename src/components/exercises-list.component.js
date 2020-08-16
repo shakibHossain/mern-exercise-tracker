@@ -25,9 +25,7 @@ const Exercise = (props) => (
 export default class ExercisesList extends Component {
   constructor(props) {
     super(props);
-
-    this.deletedExercise = this.deletedExercise.bind(this);
-
+    this.deleteExercise = this.deleteExercise.bind(this);
     this.state = { exercises: [] };
   }
 
@@ -53,12 +51,12 @@ export default class ExercisesList extends Component {
   }
 
   exerciseList() {
-    return this.state.exercises.map((currentExercise) => {
+    return this.state.exercises.map((currentexercise) => {
       return (
         <Exercise
-          exercise={currentExercise}
+          exercise={currentexercise}
           deleteExercise={this.deleteExercise}
-          key={currentExercise._id}
+          key={currentexercise._id}
         />
       );
     });
