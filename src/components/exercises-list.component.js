@@ -42,7 +42,7 @@ export default class ExercisesList extends Component {
 
   deleteExercise(id) {
     axios
-      .delete("http://localhost:5001/exercises/" + id)
+      .delete("http://localhost:5000/exercises/" + id)
       .then((res) => console.log(res.data));
 
     this.setState({
