@@ -21,6 +21,9 @@
     "start": "react-scripts start && node backend/server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
+  "engines": {
+    "node": "14.8.0"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
