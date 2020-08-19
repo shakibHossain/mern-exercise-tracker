@@ -32,6 +32,9 @@ app.use("/users", usersRouter);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("../build"));
 }
+app.get("/", function (req, res) {
+  res.render("index", {});
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
