@@ -18,8 +18,7 @@
     "test": "react-scripts test",
     "install-client": "npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
-    "start": "node backend/server.js",
-    "client": "npm start",
+    "start": "react-scripts start && node backend/server.js",
     "eject": "react-scripts eject"
   },
   "engines": {
