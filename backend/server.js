@@ -12,7 +12,7 @@ app.use(express.json());
 
 // Database connection
 const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, {
+mongoose.connect(process.env.MONGODB_URI || uri, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
